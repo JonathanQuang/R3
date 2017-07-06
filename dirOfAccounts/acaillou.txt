@@ -1,0 +1,9 @@
+lastLogin,robohashLink,energy,speed,attack,defence,money,level,hp
+165,https://robohash.org/caillou.png,100,10,5,5,100,1,50
+165,https://robohash.org/caillou.png,80.0,10,5,5,400.0,2.0,50
+165,https://robohash.org/caillou.png,60.0,10,5,5,700.0,3.0,50
+165,https://robohash.org/caillou.png,40.0,10,5,5,500.0,3.0,50
+165,https://robohash.org/caillou.png,20.0,10,5,5,300.0,3.0,50
+165,https://robohash.org/caillou.png,0.0,10,5,5,600.0,4.0,50
+165,https://robohash.org/caillou.png,0.0,10,5,5,600.0,4.0,50
+165,https://robohash.org/caillou.png,0.0,10.0,12.0,10.0,100.0,4.0,50

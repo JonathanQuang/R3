@@ -1,0 +1,96 @@
+#!/usr/bin/python
+print 'content-type:text/html \n'
+print'<!DOCTYPE html><html><head><title>Arena</title><link rel="stylesheet" type="text/css" href="style.css"></head><body>'
+
+import cgi
+import cgitb
+import gameLibFunctions
+import os
+
+cgitb.enable()
+
+query=cgi.FieldStorage()
+userName=query['ooser'].value
+
+openString= 'dirOfAccounts/a' + userName + '.txt'
+f=open(openString)
+s=f.read()
+f.close()
+
+gameLibFunctions.updateEnergy(openString)
+pyDict = gameLibFunctions.getRecentDict(openString)
+
+
+
+listOfFiles = os.listdir('dirOfAccounts')
+
+#Removes archaic files from being processed
+listNoOld=[]
+for x in listOfFiles:
+    if x[0]=='a':
+        listNoOld.append(x)
+
+
+listOfFilesWithAboutSameLevel=[]
+
+#shows players that are at less than 5 levels away
+for x in listNoOld:
+    subDict=gameLibFunctions.getRecentDict('dirOfAccounts/' + x)
+    theLevel=subDict['level']
+    if abs(float(theLevel) - float(pyDict['level']))  < 5:
+        listOfFilesWithAboutSameLevel.append(x)
+
+
+#strips file names down to its actual name        
+counter = 0
+while counter < len(listOfFilesWithAboutSameLevel):
+    modifyThis=listOfFilesWithAboutSameLevel[counter]
+    listOfFilesWithAboutSameLevel[counter]=modifyThis[1:len(modifyThis)-4]
+    counter += 1
+
+
+#Removes duplicate files that somehow appear and have a period at the end
+counter = 0
+outList=[]
+while counter <  len(listOfFilesWithAboutSameLevel):
+    item=listOfFilesWithAboutSameLevel[counter]
+    checkForPeriod=item[len(item)-1]
+    if not(checkForPeriod=="."):
+        outList.append(item)
+    counter += 1
+    
+listOfFilesWithAboutSameLevel=outList
+
+listOfFilesWithAboutSameLevel.remove(userName)
+
+
+
+
+print '<center><h1>Welcome to the ARENA</h1></center><br>'
+print 'FIGHT PLAYERS who are roughly your skill level'
+print "The amount of bolts you earn from winning is the enemy's level * 150"
+print '<br>You also gain a level if you win</br>'
+print "If you lose, the arena will take bolts from you equal to the enemy's level * 100"
+print "It is possible to incur debt in the arena, so beware"
+print '<br>'
+print '<br>Note that it costs twenty battery life to battle'
+print '<font color="green"><br>Your current battery life is at ' + pyDict['energy'] + '</font>'
+print '<br>Note that you may only fight players whose levels are no further than 4 levels away from yours<br>'
+
+
+if float(pyDict['energy']) >= 20:
+    print '<form action="battle.py" method="POST">'
+    print '<input type="hidden" name="ooser" value="' + userName + '">'
+    print '<select name="Enemy">'
+    for x in listOfFilesWithAboutSameLevel:
+        print '<option value"=' + x + '">' + x +'</option>'
+    print '</select><input type="submit" value="fight"></form>'
+else:
+    print 'You do not have enough energy to fight'
+print '<form action="town.py" method="POST">'
+print '<input type="hidden" name ="ooser" value="' + userName + '">'
+print '<input type="submit" name="submit" value="return to town"></form>'
+print '<center><img src="http://cdn.imgs.tuts.dragoart.com/how-to-draw-the-colosseum_1_000000006068_5.jpg" style="height:350px;"></center>'
+
+
+print '</body></html>'

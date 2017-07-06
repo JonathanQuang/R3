@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Register</title></head>
+	<body>
+
+		<form action = "accountRegisterPython.py" method="POST">
+			<br>New Username
+			<input type="text" name = "theUser">
+			<br>New Password
+			<input type="password" name = "thePass">
+			<br>Repeat Password again
+			<input type="password" name = "thePassRepeat">
+			<br>Email
+			<input type="text" name = "theEmail">
+			<input type="submit" name="submit" value="submit">
+		</form>
+		<a href="account.html">Click here to return to login page</a>
+	</body>
+</html>

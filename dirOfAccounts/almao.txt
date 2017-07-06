@@ -1,0 +1,17 @@
+lastLogin,robohashLink,energy,speed,attack,defence,money,level,hp
+165,https://robohash.org/lmao.png,100,10,5,5,100,1,50
+165,https://robohash.org/lmao.png,100,10,5,5,100,1,50
+165,https://robohash.org/lmao.png,95.0,10,7.0,5,80.0,1,50
+165,https://robohash.org/lmao.png,90.0,10,10.0,5,60.0,1,50
+165,https://robohash.org/lmao.png,85.0,10,11.0,5,40.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50
+165,https://robohash.org/lmao.png,80.0,10,13.0,5,20.0,1,50

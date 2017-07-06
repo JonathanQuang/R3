@@ -1,0 +1,94 @@
+
+@keyframes granted {
+    from {background-color:#778899}
+    to {background-color:gray}
+}
+
+#Access {
+    color:#32CD32;
+}
+
+#grant {
+    color:black;
+    font-size:24px;
+    animation-name: granted;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+
+#landingBar {
+    position:relative;
+    top:-20px;
+    background: gray;
+    background: -webkit-linear-gradient(#160b4b,#09051f);
+    background: -o-linear-gradient(#160b4b,#09051f);
+    background: -moz-linear-gradient(#160b4b,#09051f);
+    background: linear-gradient(#160b4b,#09051f);
+}
+
+#landingHeader {
+    color: white;
+}
+
+#landRight {
+    text-align: right;
+    color: white;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: right;
+    height:90px;
+    background:black;
+    color:orange;
+}
+
+#landingBody {
+    margin:0;
+    padding:0;
+    background:black;
+    background: -webkit-radial-gradient(black,#4a4a4a);
+    background: -o-radial-gradient(black,#4a4a4a);
+    background: -moz-radial-gradient(black,#4a4a4a);
+    background: radial-gradient(black,#4a4a4a);
+}
+
+#landingPicDiv {
+    width:100%;
+    height:95%;
+    background:black;
+}
+
+#landingPic {
+    width:60%;
+    
+}
+
+#acceptImage {
+    position:relative;
+    bottom:50%
+
+	    
+}
+
+
+#bg {
+    
+}
+
+#bg img {
+    position:fixed;
+    top:0;
+    left:0;
+    
+}
+
+
+
+

@@ -1,0 +1,7 @@
+lastLogin,robohashLink,energy,speed,attack,defence,money,level,hp
+162,https://robohash.org/herp5.png,100,15,5,5,100,1,20
+163,https://robohash.org/herp5.png,100,15,5,5,100,1,20
+163,https://robohash.org/herp5.png,80,15,5,5,250.0,1,20
+163,https://robohash.org/herp5.png,60,15,5,5,400.0,1,20
+163,https://robohash.org/herp5.png,40,15,5,5,550.0,1,20
+163,https://robohash.org/herp5.png,20,15,5,5,700.0,1,20

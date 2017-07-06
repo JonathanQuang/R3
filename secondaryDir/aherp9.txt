@@ -1,0 +1,2 @@
+intellect,inventor
+10,null

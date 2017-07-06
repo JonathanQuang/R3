@@ -1,0 +1,6 @@
+def updateEnergy(filePath):
+    f=open(filePath)
+    s=f.read()
+    f.close()
+    pyDict={}
+    counter=0

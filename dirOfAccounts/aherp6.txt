@@ -1,0 +1,2 @@
+lastLogin,robohashLink,energy,speed,attack,defence,money,level,hp
+163,https://robohash.org/herp6.png,100,10,5,5,100,1,50

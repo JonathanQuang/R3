@@ -1,0 +1,13 @@
+weaponOrArmor,attPlus,defPlus,spdPlus,description,cost,picture
+Sword,5,0,0,Typical weapon used for battles,250,http://vignette2.wikia.nocookie.net/lotr/images/8/88/2257-Aragorn-Costume-Sword-large.jpg/revision/latest?cb=20150418090815
+Fists of Steel,7,5,0,My fists are made of STEEEL,500,http://wiki.teamfortress.com/w/images/1/1e/FvN_fists_of_steel.png
+Shooty Thing,10,-5,5,Would you like to be Neo?,1000,https://images-na.ssl-images-amazon.com/images/I/41C0kGrEnmL._SY300_.jpg 
+Tesla,15,0,-5,My name is Zeus,1500,https://upload.wikimedia.org/wikipedia/commons/6/62/Teslacoil.jpg
+Book of Knowledge,3,0,10,SANIC SPEED,400,http://www.jiaqingqiang.com/wp-content/uploads/2014/02/Ryze_Book_Shot1-1024x916.jpg
+Fish,1,0,0,Why would you buy this? Although it has the latest news holding it,100,http://tf2itemhack.com/product_images/weapons/thm.png
+Copper Armor,0,3,0,State of the art beginnger's armor,250,https://upload.wikimedia.org/wikipedia/commons/f/f0/NatCopper.jpg
+Brass Armor,0,6,0,Goooooooooooong~!,500,http://www.alcammetals.com/wp-content/uploads/Brass-Bars.jpg
+Iron Armor,0,10,0,Mined and refined for your best interest,750,https://upload.wikimedia.org/wikipedia/commons/5/55/Iron_lamp.jpg
+Steel Armor,0,15,0,I'M MADE OF STEEEL,1000,http://wahmaster.com/wp-content/uploads/2016/04/Steel-products-1.jpg
+Titanium Armor,0,17,0,Isn't this a pretty metal,1500,https://www.kaufmann-mercantile.com/field-notes//images/titanium.jpg
+Tungsten Armor,0,20,0,This looks like any other metal...,2000,https://www.tungstenworld.com/images/cmsfiles/images/tungsten%20element%20resized.jpg

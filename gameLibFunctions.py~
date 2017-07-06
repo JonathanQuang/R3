@@ -1,0 +1,41 @@
+import time
+
+def updateEnergy(filePath):
+    f=open(filePath)
+    s=f.read()
+    f.close()
+    s=s.strip()
+    s=s.split('\n')
+    lastLine=s[len(s)-1]
+    lastLine=lastLine.strip()
+    lastLine=lastLine.split(',')
+    currTime=time.localtime()
+    currTime=currTime[7]
+    if abs(currTime - int(lastLine[0])) > 0:
+        f=open(filePath,'a')
+        lastLine[0]=str(currTime)
+        lastLine[2]=str(100)
+        outString=""
+        for x in lastLine:
+            outString=outString + x + ','
+        outString=outString[:len(outString)-1]
+        f.write(outString + '\n')
+        
+def getRecentDict(openString):
+    pyDict = {}
+    f=open(openString)
+    s=f.read()
+    f.close()
+    s=s.strip()
+    lines = s.split('\n')
+    titles = lines[0]
+    titles = titles.strip()
+    titles = titles.split(',')
+    lastLine=lines[len(lines)-1]
+    lastLine = lastLine.strip()
+    lastLine = lastLine.split(',')
+    counter = 0
+    for x in titles:
+        pyDict[x] = lastLine[counter]
+        counter += 1
+    return pyDict

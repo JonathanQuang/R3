@@ -1,0 +1,25 @@
+import hashlib
+
+def sumString(theString):
+    outSum=0
+    for x in theString:
+        outSum=outSum+ord(x)
+    return outSum
+        
+def encode(theString,genKey):
+    outString=''
+    for x in theString:
+        insertNum=ord(x) + sumString(genKey)
+        outString=outString + '-' + str(insertNum)
+    return outString
+
+def decode(theString,decodeKey):
+    splitThing=theString.split('-')
+    splitThing=splitThing[1:]
+    outString=''
+    for x in splitThing:
+        outString=outString + chr(int(x) - sumString(decodeKey))
+    return outString
+
+def superHasher(theString,genKey):
+    return hashlib.sha1(encode(theString,genKey)).hexdigest()
